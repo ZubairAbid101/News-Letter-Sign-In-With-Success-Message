@@ -1,0 +1,20 @@
+/* Product list styling */
+
+.product-list{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    @media screen and (max-width:700px) {
+        margin-left: 0px;
+    }
+}
+
+.list-icon{
+    display: block;
+    margin-right: 10px;
+}
+
+.list-text{
+    font-size: 0.8rem;
+}

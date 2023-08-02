@@ -1,0 +1,80 @@
+/* Form styling */
+
+:root{
+    --btn-color: hsl(0, 0%, 100%);
+    --btn-bg: hsl(234, 29%, 20%);
+    --btn-bg-hover: hsl(4, 100%, 67%);
+
+    --email-label-color: hsl(234, 29%, 20%);
+    --error-message-color: hsl(4, 100%, 67%);
+}
+
+.email-label, .email-input, .submit-btn{
+    display: block;
+}
+
+.email-input, .submit-btn{
+    width: 95%;
+    margin: 0px auto;
+    padding: 10px;
+
+    border-radius: 8px;
+}
+
+.label-error-container{
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email-label{
+    margin-left: 10px;
+
+    color: var(--email-label-color);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    @media screen and (max-width:700px) {
+        margin-left: 0px;
+    }
+}
+
+.error-message{
+    color: var(--error-message-color);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.email-input{
+    margin-top: 10px;
+}
+
+.email-input::placeholder{
+    color: hsl(231, 7%, 60%);
+}
+
+.email-input:focus{
+    outline: none;
+}
+
+.email-input:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 3px 1px hsl(231, 7%, 60%);
+}
+
+.submit-btn{
+    margin-top: 25px;
+
+    color: var(--btn-color);
+    background-color: var(--btn-bg);
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: var(--btn-bg-hover);
+    box-shadow: 0px 3px 3px 1px hsl(231, 7%, 60%);
+}
